@@ -25,6 +25,18 @@ namespace SavingsAccumulator
         public MainPage()
         {
             this.InitializeComponent();
+            Loaded += MainPage_Loaded;
+        }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            TargetControl.OnTargetSaved += TargetControl_OnTargetSaved;
+
+        }
+
+        private void TargetControl_OnTargetSaved(object sender, Model.Target e)
+        {
+            throw new NotImplementedException();
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)

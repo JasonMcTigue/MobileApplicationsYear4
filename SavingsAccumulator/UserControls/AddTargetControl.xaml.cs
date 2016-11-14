@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavingsAccumulator.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,6 +20,9 @@ namespace SavingsAccumulator.UserControls
 {
     public sealed partial class AddTargetControl : UserControl
     {
+
+
+        public event EventHandler <Target> OnTargetSaved;
         public AddTargetControl()
         {
             this.InitializeComponent();
@@ -26,7 +30,15 @@ namespace SavingsAccumulator.UserControls
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            var newTarget = new Target(); //creates new object
+            newTarget.Name = TargetNameTxtBox.Text;//taking text from text nox and putting it in the object
+            newTarget.SavingTarget = Convert.ToInt32(SavedAmtTxtBox.Text);//have to convert string to int
+            newTarget.Notes = NotesTxtBox.Text;
+
+            FireOnTargetSave(newTarget);
+
+            resetTxtBox();
+            Visibility = Visibility.Collapsed;
         }
 
 
@@ -37,6 +49,7 @@ namespace SavingsAccumulator.UserControls
 
         private void CancelBtn_Click(object sender, RoutedEventArgs e)
         {
+            //closes user control
             Visibility = Visibility.Collapsed;// Brings the user back to the home page 
 
             resetTxtBox(); //Clears the text boxes of all text.
@@ -49,6 +62,10 @@ namespace SavingsAccumulator.UserControls
             SavedAmtTxtBox.Text = string.Empty;
         }
 
+        //called when ever information needs to be sent to the main page 
+        private void FireOnTargetSave(Target newTarget) {
+            OnTargetSaved?.Invoke(null, newTarget);
+        }
        
     }
 }
