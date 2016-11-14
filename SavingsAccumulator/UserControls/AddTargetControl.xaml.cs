@@ -29,8 +29,16 @@ namespace SavingsAccumulator.UserControls
             
         }
 
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resetTxtBox();
+        }
+
         private void CancelBtn_Click(object sender, RoutedEventArgs e)
         {
+            Visibility = Visibility.Collapsed;// Brings the user back to the home page 
+
             resetTxtBox(); //Clears the text boxes of all text.
         }
 
@@ -40,5 +48,7 @@ namespace SavingsAccumulator.UserControls
             NotesTxtBox.Text = string.Empty;
             SavedAmtTxtBox.Text = string.Empty;
         }
+
+       
     }
 }

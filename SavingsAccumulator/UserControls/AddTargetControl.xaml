@@ -35,6 +35,7 @@
 
         <Button Grid.Row="3" x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Click="SaveBtn_Click"/>
         <Button Grid.Row="3" x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Right" Click="CancelBtn_Click"/>
+        <Button Grid.Row="3" x:Name="ClearBtn" Content="Clear" HorizontalAlignment="Center" Click="ClearBtn_Click"/>
 
     </Grid>
 </UserControl>
