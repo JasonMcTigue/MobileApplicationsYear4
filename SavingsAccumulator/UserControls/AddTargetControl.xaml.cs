@@ -23,5 +23,22 @@ namespace SavingsAccumulator.UserControls
         {
             this.InitializeComponent();
         }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void CancelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resetTxtBox(); //Clears the text boxes of all text.
+        }
+
+        private void resetTxtBox() {
+            //This method resets all the text boxes when called
+            TargetNameTxtBox.Text = string.Empty;
+            NotesTxtBox.Text = string.Empty;
+            SavedAmtTxtBox.Text = string.Empty;
+        }
     }
 }

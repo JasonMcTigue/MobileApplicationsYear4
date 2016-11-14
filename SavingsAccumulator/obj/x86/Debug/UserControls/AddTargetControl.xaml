@@ -20,21 +20,21 @@
 
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Target Name:" />
-            <TextBox x:ConnectionId='3' x:Name="TargetNameTxtBox" />
+            <TextBox x:ConnectionId='5' x:Name="TargetNameTxtBox" />
         </StackPanel>
 
         <StackPanel  Grid.Row="1" Orientation="Vertical">
             <TextBlock Text="Amount Saved:" />
-            <TextBox x:ConnectionId='2' x:Name="SavedAmtTxtBox" />
+            <TextBox x:ConnectionId='4' x:Name="SavedAmtTxtBox" />
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Vertical">
             <TextBlock Text="Notes:" />
-            <TextBox x:ConnectionId='1' x:Name="NotesTxtBox" />
+            <TextBox x:ConnectionId='3' x:Name="NotesTxtBox" />
         </StackPanel>
 
-        <Button Grid.Row="3" Content="Save" HorizontalAlignment="Right" />
-        <Button Grid.Row="3" Content="Delete" HorizontalAlignment="Left"/>
+        <Button x:ConnectionId='1' Grid.Row="3" x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left"                      />
+        <Button x:ConnectionId='2' Grid.Row="3" x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Right"                        />
 
     </Grid>
 </UserControl>
