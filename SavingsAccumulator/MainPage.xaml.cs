@@ -26,5 +26,11 @@ namespace SavingsAccumulator
         {
             this.InitializeComponent();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            //open the add target control
+            TargetControl.Visibility = Visibility.Visible;
+        }
     }
 }

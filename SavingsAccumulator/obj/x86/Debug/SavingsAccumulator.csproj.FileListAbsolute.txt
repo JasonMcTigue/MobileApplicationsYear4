@@ -190,3 +190,8 @@ c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsA
 c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\qualifiers.txt.intermediate
 c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\ProjectArchitectures.txt
+c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\UserControls\AddTargetControl.xbf
+c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTargetControl.g.i.cs
+c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTargetControl.g.cs
+c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTargetControl.xaml
+c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTargetControl.xbf

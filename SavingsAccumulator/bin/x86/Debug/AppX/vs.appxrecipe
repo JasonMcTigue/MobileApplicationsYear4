@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>BAF8E753FAA3F4AD18D73BACB396B9F111BBCAF2C0EA91AB97270793A2B73A4B</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>68447C251362E3642569F6E48BA859141BAD8850388B895BDF347AD74DBC8557</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>67c145e8-0c52-4237-bb13-c2de0d098c3b_1.0.0.0_x86__t9sbtj4kj4cst</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>67c145e8-0c52-4237-bb13-c2de0d098c3b_t9sbtj4kj4cst!App</RegisteredUserModeAppID>
     <RegisteredPackageID>67c145e8-0c52-4237-bb13-c2de0d098c3b</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-14T14:56:36.957</Modified>
+      <Modified>2016-11-14T15:21:33.031</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.exe">
       <PackagePath>entrypoint\SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-11-14T14:56:32.834</Modified>
+      <Modified>2016-11-14T15:21:30.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.xr.xml">
       <PackagePath>SavingsAccumulator.xr.xml</PackagePath>
-      <Modified>2016-11-14T14:56:32.247</Modified>
+      <Modified>2016-11-14T15:21:30.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-14T14:56:35.729</Modified>
+      <Modified>2016-11-14T15:21:32.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\SavingsAccumulator.exe">
       <PackagePath>SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-11-14T14:56:36.953</Modified>
+      <Modified>2016-11-14T15:21:33.027</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
