@@ -38,6 +38,8 @@ namespace SavingsAccumulator
             //if app goes to sleep it will see that the view model is not null and continue where it left off
             if (_mainViewModel == null) {
                 _mainViewModel = new MainViewModel();
+
+                //used main view model to get data from
                 DataContext = _mainViewModel;
             }
 

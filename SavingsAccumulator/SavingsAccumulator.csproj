@@ -103,6 +103,8 @@
     <Compile Include="UserControls\AddTargetControl.xaml.cs">
       <DependentUpon>AddTargetControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View Model\baseViewModel.cs" />
+    <Compile Include="View Model\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
