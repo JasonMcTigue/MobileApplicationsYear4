@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavingsAccumulator.View_Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace SavingsAccumulator
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private MainViewModel _mainViewModel; 
         public MainPage()
         {
             this.InitializeComponent();
@@ -32,11 +34,21 @@ namespace SavingsAccumulator
         {
             TargetControl.OnTargetSaved += TargetControl_OnTargetSaved;
 
+            //instanceded when page loads
+            //if app goes to sleep it will see that the view model is not null and continue where it left off
+            if (_mainViewModel == null) {
+                _mainViewModel = new MainViewModel();
+                DataContext = _mainViewModel;
+            }
+
         }
 
         private void TargetControl_OnTargetSaved(object sender, Model.Target e)
         {
             //throw new NotImplementedException();
+
+            //adds new target to the list
+            _mainViewModel.addNewTarget(e);
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
