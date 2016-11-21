@@ -47,11 +47,15 @@
                         <TextBlock Grid.Column="1"/>
 
                         <!--Last time it was updated-->
-                        <TextBlock Grid.Row="1" Text="Amount Saved: "/>
+                        <TextBlock Margin="0,10,0,0" Grid.Row="1" Text="Amount Saved: "/>
                         <TextBlock Grid.Row="1" Grid.Column="1"/>
 
-                        <!--progress bar-->
-                        <ProgressBar IsIndeterminate="False" Height="10"/>
+                        <!--progress bar spans through out all 3 columns-->
+                        <ProgressBar Margin="0,10,0,10" Grid.Row="2" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10"/>
+
+                        <Button Grid.Row="3" Grid.Column="0" Content="Add "/>
+                        <Button Grid.Row="3" Grid.Column="0" Content="Minus "/>
+                        <Button Grid.Row="3" Grid.Column="0" Content="Edit "/>
 
                     </Grid>
                 </DataTemplate>
