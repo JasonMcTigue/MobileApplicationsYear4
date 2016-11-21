@@ -14,8 +14,51 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0">
-        
+        <ListView x:Name="TargetListView" Grid.Row="0">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+
+                </Style>
+                
+
+            </ListView.ItemContainerStyle>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            
+                        </Grid.ColumnDefinitions>
+
+                        <!--Target text block-->
+                        <TextBlock Text="Target Name: "/>
+                        <TextBlock Grid.Column="1"/>
+
+                        <!--Last time it was updated-->
+                        <TextBlock Text="Amount Saved: "/>
+                        <TextBlock Grid.Column="1"/>
+
+                        <!--progress bar-->
+                        <ProgressBar IsIndeterminate="False" Height="10"/>
+
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+           <!-- <ListView Grid.Row="0"/>-->
+
         </ListView>
 
         <CommandBar Grid.Row="1" ClosedDisplayMode="Minimal">

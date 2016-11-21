@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>67c145e8-0c52-4237-bb13-c2de0d098c3b</PackageIdentityName>
     <PackageIdentityPublisher>CN=jason</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-14T16:19:55.136</Modified>
+      <Modified>2016-11-21T18:55:52.340</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.exe">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.exe">
       <PackagePath>entrypoint\SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-11-14T16:19:53.956</Modified>
+      <Modified>2016-11-21T18:55:49.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -448,60 +448,60 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T22:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-14T14:40:49.254</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:30:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.xr.xml">
       <PackagePath>SavingsAccumulator.xr.xml</PackagePath>
-      <Modified>2016-11-14T15:38:35.025</Modified>
+      <Modified>2016-11-21T18:55:48.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-10-24T11:52:32.070</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-14T16:19:54.547</Modified>
+      <Modified>2016-11-21T18:55:51.633</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\SavingsAccumulator.exe">
+    <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\SavingsAccumulator.exe">
       <PackagePath>SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-11-14T16:19:55.130</Modified>
+      <Modified>2016-11-21T18:55:52.335</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

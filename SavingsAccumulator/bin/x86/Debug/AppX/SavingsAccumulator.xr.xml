@@ -11,16 +11,22 @@
       <RootProperty Name="Background" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="ColumnDefinitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetRowSpan" />
       <RootMethod Name="SetRowSpan" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="ClosedDisplayMode" />
       <RootProperty Name="PrimaryCommands" />
@@ -32,6 +38,24 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
       <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="HorizontalContentAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
+      <RootProperty Name="IsIndeterminate" />
     </RootType>
     <RootType FullName="SavingsAccumulator.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -45,9 +69,6 @@
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
   </Roots.RootTypes>

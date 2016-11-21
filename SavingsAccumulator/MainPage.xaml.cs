@@ -36,7 +36,7 @@ namespace SavingsAccumulator
 
         private void TargetControl_OnTargetSaved(object sender, Model.Target e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)

@@ -35,6 +35,7 @@ namespace SavingsAccumulator.UserControls
             newTarget.SavingTarget = Convert.ToInt32(SavedAmtTxtBox.Text);//have to convert string to int
             newTarget.Notes = NotesTxtBox.Text;
 
+            //Runs the fire on target saved event
             FireOnTargetSave(newTarget);
 
             resetTxtBox();
