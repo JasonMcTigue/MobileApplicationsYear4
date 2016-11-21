@@ -47,8 +47,8 @@
                         <TextBlock Grid.Column="1"/>
 
                         <!--Last time it was updated-->
-                        <TextBlock Text="Amount Saved: "/>
-                        <TextBlock Grid.Column="1"/>
+                        <TextBlock Grid.Row="1" Text="Amount Saved: "/>
+                        <TextBlock Grid.Row="1" Grid.Column="1"/>
 
                         <!--progress bar-->
                         <ProgressBar IsIndeterminate="False" Height="10"/>
