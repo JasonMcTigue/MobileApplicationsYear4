@@ -21,7 +21,7 @@ namespace SavingsAccumulator.Model
         public string Notes { get; set; }
 
         public DateTime Date { get; set; }
-
         
+        public List<Transaction> Transactions { get; set; } //traget can have more then one list
     }
 }
