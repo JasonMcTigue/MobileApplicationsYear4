@@ -13,7 +13,7 @@ namespace SavingsAccumulator.Model
     {
         [Key]//sets Id as the primary key
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }// Primary key and  identity column so it will auto incement by itself
+        public int TargetId { get; set; }// Primary key and  identity column so it will auto incement by itself
         public string Name { get; set; }
         public decimal SavingTarget { get; set; } //is a decimal to allow user to in put cents.
         public decimal CurrentBalance { get; set; }//keeps track of the current balance
@@ -21,5 +21,7 @@ namespace SavingsAccumulator.Model
         public string Notes { get; set; }
 
         public DateTime Date { get; set; }
+
+        
     }
 }
