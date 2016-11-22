@@ -54,8 +54,8 @@
                         <ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="20" Maximum="{Binding SavingTarget}" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10"/>
 
                         <Button Grid.Row="3" Grid.Column="0" Content="Add "/>
-                        <Button Grid.Row="3" Grid.Column="0" Content="Minus "/>
-                        <Button Grid.Row="3" Grid.Column="0" Content="Edit "/>
+                        <Button Grid.Row="3" Grid.Column="1" Content="Minus "/>
+                        <Button Grid.Row="3" Grid.Column="2" Content="Edit "/>
 
                     </Grid>
                 </DataTemplate>
