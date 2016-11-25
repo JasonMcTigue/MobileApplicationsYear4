@@ -10,7 +10,7 @@ namespace SavingsAccumulator.DataContext
     //static class to refer to for adding stuff.
     public static class DataContextHelper
     {
-        public async void AddTarget(Target newTarget) {
+        public static async void AddTarget(Target newTarget) {
 
             using (var db = new TargetDataContext()) {
                 db.Targets.Add(newTarget); //adds a new target to the database
@@ -18,7 +18,7 @@ namespace SavingsAccumulator.DataContext
             }
         }
 
-        public async void AddTransation(Target newTransaction)
+        public static async void AddTransation(Target newTransaction)
         {
 
             using (var db = new TargetDataContext())
