@@ -95,10 +95,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataContext\DataContextHelper.cs" />
     <Compile Include="DataContext\TargetDataContext.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20161125175021_MyFirstMigration.cs" />
+    <Compile Include="Migrations\20161125175021_MyFirstMigration.designer.cs">
+      <DependentUpon>20161125175021_MyFirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\TargetDataContextModelSnapshot.cs" />
     <Compile Include="Model\Target.cs" />
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -21,7 +21,7 @@ namespace SavingsAccumulator.View_Model
 
         public void addNewTarget(Target newTarget) {
             //adds a new item to the list
-            DataContextHelper.Add(newTarget);
+            DataContextHelper.AddTarget(newTarget);
         }
     }
 }

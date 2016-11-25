@@ -34,6 +34,8 @@ namespace SavingsAccumulator.UserControls
             newTarget.Name = TargetNameTxtBox.Text;//taking text from text nox and putting it in the object
             newTarget.SavingTarget = Convert.ToInt32(SavedAmtTxtBox.Text);//have to convert string to int
             newTarget.Notes = NotesTxtBox.Text;
+            newTarget.Date = DateTime.Now;
+            newTarget.CurrentBalance = 0;//starts off at zero
 
             //Runs the fire on target saved event
             FireOnTargetSave(newTarget);
