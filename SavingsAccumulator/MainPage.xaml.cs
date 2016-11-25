@@ -51,6 +51,7 @@ namespace SavingsAccumulator
 
             //adds new target to the list
             _mainViewModel.addNewTarget(e);
+            TargetListView.ItemsSource = _mainViewModel.TargetList;
         }
 
         private void AppBarButton_Click(object sender, RoutedEventArgs e)

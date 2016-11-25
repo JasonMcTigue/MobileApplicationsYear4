@@ -1,4 +1,5 @@
-﻿using SavingsAccumulator.Model;
+﻿using SavingsAccumulator.DataContext;
+using SavingsAccumulator.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,24 +11,17 @@ namespace SavingsAccumulator.View_Model
 {
     public class MainViewModel : baseViewModel //inherits base view model
     {
-        //OC Noets when the list has changed
-        private ObservableCollection<Target> _targetList;
-
-        public ObservableCollection<Target> TargetList {
-            get { return _targetList; }
-            set {
-                _targetList = value;
-                NotifyPropertyChanged("TargetList");
-            }
+       public List<Target> TargetList {
+            get { return DataContextHelper.GetTargets(); }
         }
-
+      
         public MainViewModel() {
-            _targetList = new ObservableCollection<Target>();
+          
         }
 
         public void addNewTarget(Target newTarget) {
             //adds a new item to the list
-            TargetList.Add(newTarget);
+            DataContextHelper.Add(newTarget);
         }
     }
 }

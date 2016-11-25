@@ -41,6 +41,14 @@ namespace SavingsAccumulator.DataContext
                     target.SavingTarget = updateTarget.SavingTarget;// Updates the saving target after a change by the user
                     await db.SaveChangesAsync();
                 }
+
+
+            }
+        }
+
+        public static List<Target> GetTargets() {
+            using (var db = new TargetDataContext()) {
+                return db.Targets.ToList();
             }
         }
 
