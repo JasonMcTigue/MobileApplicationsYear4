@@ -28,7 +28,22 @@ namespace SavingsAccumulator.DataContext
             }
         }
 
-       
+        public static async void UpdateTarget(Target updateTarget)
+        {
+
+            using (var db = new TargetDataContext())
+            {
+                var target = db.Targets.FirstOrDefault(x => x.TargetId == updateTarget.TargetId);
+                if (target != null) {
+                    //entity framwork keeps track of the target item so when the properties are saved the datacontext knows there has been a change.
+                    target.Name = updateTarget.Name;//Updates the name after a change by the user
+                    target.Notes = updateTarget.Notes;// Updates the notes after a change by the user
+                    target.SavingTarget = updateTarget.SavingTarget;// Updates the saving target after a change by the user
+                    await db.SaveChangesAsync();
+                }
+            }
+        }
+
 
     }
 }
