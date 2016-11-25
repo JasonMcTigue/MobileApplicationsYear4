@@ -2,7 +2,9 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="TargetList" />
+    <RootPropertyPathName Name="CurrentBalance" />
     <RootPropertyPathName Name="SavingTarget" />
+    <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Name" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>

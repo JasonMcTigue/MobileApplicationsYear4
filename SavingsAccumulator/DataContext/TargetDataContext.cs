@@ -16,13 +16,13 @@ namespace SavingsAccumulator.DataContext
     {
         //DbSet's get access tocreate, update, delete and modify the data in the table.
         //All entitie a DbSet inside a DbContext will be picked up by EF and added to the schema.
-        public DbSet<Target> Targets { get; set; }
+        public DbSet<Target> Targets { get; set; } 
         public DbSet<Transaction> Transactions { get; set; }
 
         //OnConfiguring allows you to specify the provider and its option
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Filename=SavingsAccumulator.db");
+            optionsBuilder.UseSqlite("Filename=SavingsAccumulator2.db");
         }
 
     }

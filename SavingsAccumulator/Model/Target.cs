@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SavingsAccumulator.Model
 {
-    [Table("Target")] //Name of the table in the database
+    [Table("Targets")] //Name of the table in the database
     public class Target
     {
         [Key]//sets Id as the primary key

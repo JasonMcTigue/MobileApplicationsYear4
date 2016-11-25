@@ -8,7 +8,7 @@ using SavingsAccumulator.DataContext;
 namespace SavingsAccumulator.Migrations
 {
     [DbContext(typeof(TargetDataContext))]
-    [Migration("20161125175021_MyFirstMigration")]
+    [Migration("20161125231105_MyFirstMigration")]
     partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
