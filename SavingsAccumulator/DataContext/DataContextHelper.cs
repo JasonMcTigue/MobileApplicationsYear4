@@ -61,7 +61,7 @@ namespace SavingsAccumulator.DataContext
         public static List<T> GetTable<T>() where T : class {
             using (var db = new TargetDataContext())
             {
-                return db.Set<T>().ToList();
+                return db.Set<T>().ToList();//displays inputs on the screen
             }
         }
 
