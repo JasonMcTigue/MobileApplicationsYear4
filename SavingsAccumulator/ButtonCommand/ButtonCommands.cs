@@ -13,7 +13,7 @@ namespace SavingsAccumulator.ButtonCommand
         Action _action;
 
         public ButtonCommands(Action action) {
-            _action = action;
+            _action = action;//Binded to the change visibility property on main page view model
         }
 
         public bool CanExecute(object parameter)
@@ -23,7 +23,7 @@ namespace SavingsAccumulator.ButtonCommand
 
         public void Execute(object parameter)
         {
-            _action();
+            _action();//when add button is pressed this method is activated
         }
     }
 }

@@ -19,7 +19,7 @@ namespace SavingsAccumulator.View_Model
         }
 
         //This class is needed to show the transaction control
-        private bool _showTransactionControl = false;
+        private bool _showTransactionControl = false;//set to false so the BoolVisibilityConverter will start as false when program is started..eg update page is collapsed
         public bool ShowTransactionControl {
             get { return _showTransactionControl; }
             set {

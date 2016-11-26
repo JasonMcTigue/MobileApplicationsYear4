@@ -10,12 +10,12 @@ namespace SavingsAccumulator.Converters
 {
     public class BoolVisibilityConverter : IValueConverter
     {
-        //This class stops the program from crashing is  bool is not entered.
+        //If object is false when program is ran add page should be collapsed
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is bool) {
                 if ((bool)value)
-                    return Visibility.Visible;
+                    return Visibility.Visible;//when add button is pressed this method is triggered and update page is visible
                 else
                     return Visibility.Collapsed;
             }
