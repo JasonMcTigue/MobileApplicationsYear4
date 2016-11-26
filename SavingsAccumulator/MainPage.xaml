@@ -69,6 +69,7 @@
             <AppBarButton Icon="Add" Label="Add Target" Click="AppBarButton_Click"/>
         </CommandBar>
 
+        <CC:AddTransactionControl x:Name="TransactionControl" Grid.RowSpan="2"/>
         <CC:AddTargetControl x:Name="TargetControl" Grid.RowSpan="2" Visibility="Collapsed"/>
     </Grid>
 </Page>

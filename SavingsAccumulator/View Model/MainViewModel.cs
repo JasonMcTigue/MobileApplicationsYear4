@@ -14,6 +14,16 @@ namespace SavingsAccumulator.View_Model
        public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
         }
+
+        //This class is needed to show the transaction control
+        private bool _showTransactionControl;
+        public bool ShowTransactionControl {
+            get { return _showTransactionControl; }
+            set {
+                _showTransactionControl = value;
+                NotifyPropertyChanged("ShowTransactionControl");
+            }
+        }
       
         public MainViewModel() {
           
