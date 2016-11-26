@@ -12,6 +12,7 @@
       <RootProperty Name="RequestedTheme" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -41,6 +42,7 @@
       <RootProperty Name="ClosedDisplayMode" />
       <RootProperty Name="PrimaryCommands" />
     </RootType>
+    <RootType FullName="SavingsAccumulator.UserControls.AddTransactionControl" />
     <RootType FullName="SavingsAccumulator.UserControls.AddTargetControl">
       <RootProperty Name="Visibility" />
     </RootType>

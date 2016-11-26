@@ -16,7 +16,7 @@ namespace SavingsAccumulator.View_Model
         }
 
         //This class is needed to show the transaction control
-        private bool _showTransactionControl;
+        private bool _showTransactionControl = false;
         public bool ShowTransactionControl {
             get { return _showTransactionControl; }
             set {

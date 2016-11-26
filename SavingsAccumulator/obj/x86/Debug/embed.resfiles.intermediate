@@ -1,3 +1,4 @@
 App.xbf
 MainPage.xbf
 UserControls\AddTargetControl.xbf
+UserControls\AddTransactionControl.xbf
