@@ -30,6 +30,7 @@ namespace SavingsAccumulator.UserControls
         private void CancelBtn_Click(object sender, RoutedEventArgs e)
         {
             ClearTxtBox();
+            CollapseControl();
         }
 
         private void ConfirmBtn_Click(object sender, RoutedEventArgs e)
@@ -42,6 +43,7 @@ namespace SavingsAccumulator.UserControls
             DataContextHelper.AddRecord<Transaction>(newTransaction);
 
             ClearTxtBox();
+            CollapseControl();
         }
 
         private void SetTargetId(int id) {
@@ -50,6 +52,10 @@ namespace SavingsAccumulator.UserControls
 
         private void ClearTxtBox() {
             AmtTxtBox.Text = string.Empty;//clears all text from the text box
+        }
+
+        private void CollapseControl() {
+            Visibility = Visibility.Collapsed;//Collapse menu once so user can return to main menu and see updated Target details.
         }
     }
 }
