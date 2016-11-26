@@ -12,6 +12,8 @@ namespace SavingsAccumulator.DataContext
     //static class to refer to for adding stuff.
     public static class DataContextHelper
     {
+
+        /*
         public static async void AddTarget(Target newTarget)
         {
 
@@ -19,14 +21,6 @@ namespace SavingsAccumulator.DataContext
             {
                 db.Targets.Add(newTarget); //adds a new target to the database
                 await db.SaveChangesAsync();
-            }
-        }
-
-        internal static List<Target> GetTargets()
-        {
-            using (var db = new TargetDataContext())
-            {
-                return db.Targets.ToList();
             }
         }
 
@@ -39,7 +33,30 @@ namespace SavingsAccumulator.DataContext
                 await db.SaveChangesAsync();
             }
         }
+        */
 
+        //generic method so both classes can share one method
+        public static async void AddRecord<T>(T newRecord) where T: class
+        {
+
+            using (var db = new TargetDataContext())
+            {
+                db.Add<T>(newRecord); //adds a new target to the database
+                await db.SaveChangesAsync();
+            }
+        }
+
+
+
+        internal static List<Target> GetTargets()
+        {
+            using (var db = new TargetDataContext())
+            {
+                return db.Targets.ToList();
+            }
+        }
+
+       
         public static async void UpdateTarget(Target updateTarget)
         {
 
