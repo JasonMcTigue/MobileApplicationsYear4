@@ -47,12 +47,21 @@ namespace SavingsAccumulator.DataContext
         }
 
 
-
+/*
         internal static List<Target> GetTargets()
         {
             using (var db = new TargetDataContext())
             {
                 return db.Targets.ToList();
+            }
+        }
+        */
+
+            //can get tragets and transactions from one method
+        public static List<T> GetTable<T>() where T : class {
+            using (var db = new TargetDataContext())
+            {
+                return db.Set<T>().ToList();
             }
         }
 

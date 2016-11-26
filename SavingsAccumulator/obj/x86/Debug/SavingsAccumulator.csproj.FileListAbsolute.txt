@@ -257,3 +257,4 @@ C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsA
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\Microsoft.Extensions.Options\en-us\Microsoft.Extensions.Options.Resources.resw
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\Microsoft.Extensions.Primitives\en-us\Microsoft.Extensions.Primitives.Resources.resw
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\SavingsAccumulator.csproj.GenerateResource.Cache
+C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\SavingsAccumulator.csprojResolveAssemblyReference.cache

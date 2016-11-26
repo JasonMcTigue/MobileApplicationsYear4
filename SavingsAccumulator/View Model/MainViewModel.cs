@@ -12,7 +12,7 @@ namespace SavingsAccumulator.View_Model
     public class MainViewModel : baseViewModel //inherits base view model
     {
        public List<Target> TargetList {
-            get { return DataContextHelper.GetTargets(); }
+            get { return DataContextHelper.GetTable<Target>(); }
         }
       
         public MainViewModel() {
@@ -21,7 +21,7 @@ namespace SavingsAccumulator.View_Model
 
         public void addNewTarget(Target newTarget) {
             //adds a new item to the list
-            DataContextHelper.AddTarget(newTarget);
+            DataContextHelper.AddRecord(newTarget);
         }
     }
 }
