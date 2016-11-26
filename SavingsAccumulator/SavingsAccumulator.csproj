@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ButtonCommand\ButtonCommands.cs" />
     <Compile Include="Converters\BoolVisibilityConverter.cs" />
     <Compile Include="DataContext\DataContextHelper.cs" />
     <Compile Include="DataContext\TargetDataContext.cs" />
