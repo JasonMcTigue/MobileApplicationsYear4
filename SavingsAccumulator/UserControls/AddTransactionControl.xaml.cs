@@ -51,7 +51,7 @@ namespace SavingsAccumulator.UserControls
             //Updates all the fields
             var newTransaction = new Transaction();
             newTransaction.Date = DateTime.Now;
-            newTransaction.Amount = Convert.ToDecimal(AmtTxtBox);
+            newTransaction.Amount = Convert.ToDecimal(AmtTxtBox.Text);
             newTransaction.TargetId = TargetId;//assosicates target with target id for that transaction 
             DataContextHelper.AddRecord<Transaction>(newTransaction);
 

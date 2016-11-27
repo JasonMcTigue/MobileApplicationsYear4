@@ -5,6 +5,7 @@
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="ShowTargetControl" />
+    <RootPropertyPathName Name="TargetId" />
     <RootPropertyPathName Name="ShowTransactionControl" />
     <RootPropertyPathName Name="TargetList" />
     <RootPropertyPathName Name="DataContext" />
@@ -93,6 +94,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
       <RootProperty Name="HorizontalAlignment" />
       <RootEvent Name="Click" />
     </RootType>

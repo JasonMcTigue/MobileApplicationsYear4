@@ -10,9 +10,9 @@ namespace SavingsAccumulator.ButtonCommand
     public class ButtonCommands : ICommand
     {
         public event EventHandler CanExecuteChanged;
-        Action _action;
+        Action<object> _action;
 
-        public ButtonCommands(Action action) {
+        public ButtonCommands(Action<object> action) {
             _action = action;//Binded to the change visibility property on main page view model
         }
 
@@ -23,7 +23,7 @@ namespace SavingsAccumulator.ButtonCommand
 
         public void Execute(object parameter)
         {
-            _action();//when add button is pressed this method is activated
+            _action(parameter);//when add button is pressed this method is activated
         }
     }
 }

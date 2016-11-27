@@ -17,6 +17,7 @@ namespace SavingsAccumulator.View_Model
         private int _targetId;
 
         public ButtonCommands TransactionButtonCommand { get; set; }
+        public ButtonCommands TargetButtonCommand { get; set; }
         public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
         }
@@ -40,7 +41,8 @@ namespace SavingsAccumulator.View_Model
         }
         
         public MainViewModel() {
-            TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
+           TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
+           TargetButtonCommand = new ButtonCommands(ChangeTargetVisibility);
         }
 
         public void addNewTarget(Target newTarget) {
@@ -48,8 +50,16 @@ namespace SavingsAccumulator.View_Model
             DataContextHelper.AddRecord(newTarget);
         }
 
-        private void ChangeTransactionVisibility() {
+        private void ChangeTransactionVisibility(object parameter) {
+
+            var target = parameter as Target;
+            TargetId = target.TargetId;
+
             ShowTransactionControl = true;//when add button is pressed this method is activated
+        }
+
+        private void ChangeTargetVisibility(object parameter) {
+            //ShowTargetControl = true;
         }
     }
 }
