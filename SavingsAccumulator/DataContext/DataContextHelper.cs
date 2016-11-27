@@ -36,36 +36,43 @@ namespace SavingsAccumulator.DataContext
         */
 
         //generic method so both classes can share one method
-        public static async void AddRecord<T>(T newRecord) where T: class
+        public static async void AddRecord<T>(T newRecord) where T : class
         {
 
             using (var db = new TargetDataContext())
             {
                 db.Add<T>(newRecord); //adds a new target to the database
                 await db.SaveChangesAsync();
+
+                //only runs if transaction is called
+                if (typeof(T) == typeof(Transaction)) {
+                    var transaction = newRecord as Transaction;
+                    await AddBalance(transaction);
+                }
             }
         }
 
 
-/*
-        internal static List<Target> GetTargets()
+        /*
+                internal static List<Target> GetTargets()
+                {
+                    using (var db = new TargetDataContext())
+                    {
+                        return db.Targets.ToList();
+                    }
+                }
+                */
+
+        //can get tragets and transactions from one method
+        public static List<T> GetTable<T>() where T : class
         {
-            using (var db = new TargetDataContext())
-            {
-                return db.Targets.ToList();
-            }
-        }
-        */
-
-            //can get tragets and transactions from one method
-        public static List<T> GetTable<T>() where T : class {
             using (var db = new TargetDataContext())
             {
                 return db.Set<T>().ToList();//displays inputs on the screen
             }
         }
 
-       
+
         public static async void UpdateTarget(Target updateTarget)
         {
 
@@ -83,14 +90,32 @@ namespace SavingsAccumulator.DataContext
 
 
             }
+
+            /* public static List<Target> GetTargets()
+             {
+                 using (var db = new TargetDataContext())
+                 {
+                     return db.Targets.ToList();
+                 }
+             }*/
         }
 
-       /* public static List<Target> GetTargets()
-        {
-            using (var db = new TargetDataContext())
+        private static async Task AddBalance(Transaction savedTransaction) {
+            //performs async so the app doesnt slow down if there are a lot of goals
+            await Task.Factory.StartNew(async () =>
             {
-                return db.Targets.ToList();
-            }
-        }*/
-    }
+                using (var db = new TargetDataContext()){
+                    var targets = await db.Targets.ToListAsync();// turns target into a list 
+                    var target = targets.SingleOrDefault(x => x.TargetId == savedTransaction.TargetId);//retrives the target based on the target id
+
+                    target.CurrentBalance += savedTransaction.Amount;//adds new amount to balance
+
+                    await db.SaveChangesAsync();
+                }
+            });
+        }
+
+    
+
+}
 }
