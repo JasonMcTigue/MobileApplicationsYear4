@@ -25,7 +25,16 @@ namespace SavingsAccumulator.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
-            throw new NotImplementedException();
+            //added to way binding so user can return to main page after entering a value
+            //and then add a second value again
+            if (value is Visibility) {
+                var visibilityState = (Visibility)value;
+                if(visibilityState == Visibility.Visible)
+                    return true;
+                else 
+                    return false;
+                }
+            return false;
         }
     }
 }
