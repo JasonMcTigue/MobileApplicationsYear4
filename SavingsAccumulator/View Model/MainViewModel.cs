@@ -13,6 +13,9 @@ namespace SavingsAccumulator.View_Model
 
     public class MainViewModel : baseViewModel //inherits base view model
     {
+
+        private int _targetId;
+
         public ButtonCommands TransactionButtonCommand { get; set; }
         public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
@@ -28,6 +31,13 @@ namespace SavingsAccumulator.View_Model
             }
         }
 
+        public int TargetId {
+            get { return _targetId; }
+            set {
+                _targetId = value;
+                NotifyPropertyChanged("TargetId");
+            }
+        }
         
         public MainViewModel() {
             TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
@@ -39,7 +49,7 @@ namespace SavingsAccumulator.View_Model
         }
 
         private void ChangeTransactionVisibility() {
-            ShowTransactionControl = true;
+            ShowTransactionControl = true;//when add button is pressed this method is activated
         }
     }
 }

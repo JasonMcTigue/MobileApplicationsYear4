@@ -18,7 +18,7 @@ namespace SavingsAccumulator.ButtonCommand
 
         public bool CanExecute(object parameter)
         {
-            return true;
+            return true;//return true so button is always active
         }
 
         public void Execute(object parameter)

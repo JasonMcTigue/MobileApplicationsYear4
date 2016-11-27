@@ -75,7 +75,7 @@
         </CommandBar>
 
         <!--Binds the trasaction page to the main page using converter-->
-        <CC:AddTransactionControl x:Name="TransactionControl" Grid.RowSpan="2" Visibility="{Binding ShowTransactionControl, Converter={StaticResource BoolVisibility}}"/>
-        <CC:AddTargetControl x:Name="TargetControl" Grid.RowSpan="2" Visibility="Collapsed"/>
+        <CC:AddTransactionControl x:Name="TransactionControl" Grid.RowSpan="2" TargetId=""  Visibility="{Binding ShowTransactionControl, Converter={StaticResource BoolVisibility}}"/>
+        <CC:AddTargetControl x:Name="TargetControl" Grid.RowSpan="2" Visibility="{Binding ShowTargetControl, Converter={StaticResource BoolVisibility}}"/>
     </Grid>
 </Page>

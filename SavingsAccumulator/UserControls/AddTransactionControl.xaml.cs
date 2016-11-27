@@ -22,6 +22,19 @@ namespace SavingsAccumulator.UserControls
     public sealed partial class AddTransactionControl : UserControl
     {
         public int _targetId;
+
+
+        public int TargetId {
+            get {
+                return (int)GetValue(TargetIdProperty);
+            }
+            set {
+                SetValue(TargetIdProperty, value);//Gets target id from data binding
+            }
+
+        }
+
+        private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
         public AddTransactionControl()
         {
             this.InitializeComponent();
@@ -39,7 +52,7 @@ namespace SavingsAccumulator.UserControls
             var newTransaction = new Transaction();
             newTransaction.Date = DateTime.Now;
             newTransaction.Amount = Convert.ToDecimal(AmtTxtBox);
-            newTransaction.TargetId = _targetId;
+            newTransaction.TargetId = TargetId;//assosicates target with target id for that transaction 
             DataContextHelper.AddRecord<Transaction>(newTransaction);
 
             ClearTxtBox();

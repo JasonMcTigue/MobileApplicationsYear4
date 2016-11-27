@@ -4,6 +4,7 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ShowTargetControl" />
     <RootPropertyPathName Name="ShowTransactionControl" />
     <RootPropertyPathName Name="TargetList" />
     <RootPropertyPathName Name="DataContext" />
@@ -50,6 +51,7 @@
       <RootProperty Name="PrimaryCommands" />
     </RootType>
     <RootType FullName="SavingsAccumulator.UserControls.AddTransactionControl">
+      <RootProperty Name="TargetId" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="SavingsAccumulator.UserControls.AddTargetControl">
