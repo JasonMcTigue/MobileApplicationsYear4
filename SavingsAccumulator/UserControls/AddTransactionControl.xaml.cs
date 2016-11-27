@@ -35,6 +35,14 @@ namespace SavingsAccumulator.UserControls
         }
 
         private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
+
+        public event EventHandler TransactionSaveFinished;
+        private void FireTransactionSaveFinished() {
+            if (TransactionSaveFinished != null)
+                TransactionSaveFinished(null,null);
+        }
+
+
         public AddTransactionControl()
         {
             this.InitializeComponent();
@@ -55,8 +63,9 @@ namespace SavingsAccumulator.UserControls
             newTransaction.TargetId = TargetId;//assosicates target with target id for that transaction 
             DataContextHelper.AddRecord<Transaction>(newTransaction);
 
-            ClearTxtBox();
-            CollapseControl();
+            FireTransactionSaveFinished();//trigegrs this method so new values are saved
+            ClearTxtBox();//clears all text boxes
+            CollapseControl();//collapse the control so the user can see the main menu with updates targets
         }
 
         private void SetTargetId(int id) {
