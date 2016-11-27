@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Amount: "/>
-        <TextBox x:Name="AmtTxtBox" Grid.Column="1"/>
+        <TextBox x:Name="AmtTxtBox" Grid.ColumnSpan="2" Margin="73,0,127,0"/>
 
         <Button Grid.Row="1" x:Name="ConfirmBtn" Content="Confirm" HorizontalAlignment="Left" Click="ConfirmBtn_Click"/>
         <Button Grid.Row="1" x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Right" Click="CancelBtn_Click"/>

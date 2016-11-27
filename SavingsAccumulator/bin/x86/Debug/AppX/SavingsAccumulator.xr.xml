@@ -107,6 +107,8 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Margin" />
+    </RootType>
   </Roots.RootTypes>
 </Roots>

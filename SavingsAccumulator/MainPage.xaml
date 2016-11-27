@@ -52,8 +52,10 @@
                         <TextBlock Grid.Column="1" Text="{Binding Name}"/>
 
                         <!--Last time it was updated-->
-                        <TextBlock Margin="0,10,0,0" Grid.Row="1" Text="Amount Saved: "/>
+                        <TextBlock Margin="0,10,0,0" Grid.Row="1" Text="Target: "/>
                         <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Date}"/>
+                        <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding CurrentBalance}"/>
+
 
                         <!--progress bar spans through out all 3 columns-->
                         <ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="{Binding CurrentBalance}" Maximum="{Binding SavingTarget}" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10"/>

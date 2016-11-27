@@ -1,4 +1,5 @@
-﻿using SavingsAccumulator.View_Model;
+﻿using SavingsAccumulator.DataContext;
+using SavingsAccumulator.View_Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -33,8 +34,10 @@ namespace SavingsAccumulator
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             TargetControl.OnTargetSaved += TargetControl_OnTargetSaved;
-            TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSavedFinished;
+            //TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSavedFinished;
+            TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSaveFinished;
 
+           // DataContextHelper.deleteAlltargets();
 
             //instanceded when page loads
             //if app goes to sleep it will see that the view model is not null and continue where it left off
@@ -47,9 +50,14 @@ namespace SavingsAccumulator
 
         }
 
-        private void TransactionControl_TransactionSavedFinished(object sender, System.EventArgs e) {
+        private void TransactionControl_TransactionSaveFinished(object sender, EventArgs e)
+        {
             TargetListView.ItemsSource = _mainViewModel.TargetList;//once program is saved the item source is set again and updated
         }
+
+        // private void TransactionControl_TransactionSavedFinished(object sender, System.EventArgs e) {
+        //     TargetListView.ItemsSource = _mainViewModel.TargetList;//once program is saved the item source is set again and updated
+        // }
         private void TargetControl_OnTargetSaved(object sender, Model.Target e)
         {
             //throw new NotImplementedException();

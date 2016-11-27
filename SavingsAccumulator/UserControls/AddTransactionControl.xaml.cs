@@ -54,14 +54,14 @@ namespace SavingsAccumulator.UserControls
             CollapseControl();
         }
 
-        private void ConfirmBtn_Click(object sender, RoutedEventArgs e)
+        private async void ConfirmBtn_Click(object sender, RoutedEventArgs e)
         {
             //Updates all the fields
             var newTransaction = new Transaction();
             newTransaction.Date = DateTime.Now;
             newTransaction.Amount = Convert.ToDecimal(AmtTxtBox.Text);
             newTransaction.TargetId = TargetId;//assosicates target with target id for that transaction 
-            DataContextHelper.AddRecord<Transaction>(newTransaction);
+            await DataContextHelper.AddRecord<Transaction>(newTransaction);
 
             FireTransactionSaveFinished();//trigegrs this method so new values are saved
             ClearTxtBox();//clears all text boxes

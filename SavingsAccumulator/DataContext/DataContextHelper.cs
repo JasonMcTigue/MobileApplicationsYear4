@@ -36,7 +36,7 @@ namespace SavingsAccumulator.DataContext
         */
 
         //generic method so both classes can share one method
-        public static async void AddRecord<T>(T newRecord) where T : class
+        public static async Task AddRecord<T>(T newRecord) where T : class
         {
 
             using (var db = new TargetDataContext())
@@ -85,6 +85,7 @@ namespace SavingsAccumulator.DataContext
                     target.Name = updateTarget.Name;//Updates the name after a change by the user
                     target.Notes = updateTarget.Notes;// Updates the notes after a change by the user
                     target.SavingTarget = updateTarget.SavingTarget;// Updates the saving target after a change by the user
+                   // target.CurrentBalance = updateTarget.CurrentBalance;
                     await db.SaveChangesAsync();
                 }
 
@@ -104,7 +105,7 @@ namespace SavingsAccumulator.DataContext
             //performs async so the app doesnt slow down if there are a lot of goals
             await Task.Factory.StartNew(async () =>
             {
-                using (var db = new TargetDataContext()){
+                using (var db = new TargetDataContext()) {
                     var targets = await db.Targets.ToListAsync();// turns target into a list 
                     var target = targets.SingleOrDefault(x => x.TargetId == savedTransaction.TargetId);//retrives the target based on the target id
 
@@ -115,7 +116,13 @@ namespace SavingsAccumulator.DataContext
             });
         }
 
+        public static void deleteAlltargets() {
+            using (var db = new TargetDataContext()) {
+                foreach (var item in db.Targets)
+                    db.Remove(item);
+                db.SaveChanges();
+            }
+        }
     
-
-}
+   }
 }

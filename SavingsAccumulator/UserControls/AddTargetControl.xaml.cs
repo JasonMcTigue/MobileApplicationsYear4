@@ -25,6 +25,7 @@ namespace SavingsAccumulator.UserControls
         public event EventHandler <Target> OnTargetSaved;
         public AddTargetControl()
         {
+
             this.InitializeComponent();
         }
 
@@ -36,6 +37,7 @@ namespace SavingsAccumulator.UserControls
             newTarget.Notes = NotesTxtBox.Text;
             newTarget.Date = DateTime.Now;
             newTarget.CurrentBalance = 0;//starts off at zero
+            //newTarget.SavingTarget=0;
 
             //Runs the fire on target saved event
             FireOnTargetSave(newTarget);

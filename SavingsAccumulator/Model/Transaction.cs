@@ -17,6 +17,7 @@ namespace SavingsAccumulator.Model
         public int Id { get; set; }// Primary key and  identity column so it will auto incement by itself
         public DateTime Date { get; set; }
         public decimal Amount { get; set; } //is a decimal to allow user to in put cents.
+        //public decimal SavingsTarget { get; set; }
         public int TargetId { get; set; } //forign key 
 
         [ForeignKey("TargetId")]
