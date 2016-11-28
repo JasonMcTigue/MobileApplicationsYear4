@@ -62,7 +62,7 @@
                         <!--<ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="20" Maximum="100" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10" /-->
                                                                                                                                                                    <!--Sends taget to button command-->
                         <Button Grid.Row="3" Grid.Column="0" Content="Add " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
-                        <Button Grid.Row="3" Grid.Column="1" Content="Minus " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
+                       <!-- <Button Grid.Row="3" Grid.Column="1" Content="Minus " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>-->
                         <Button Grid.Row="3" Grid.Column="2" Content="Delete" Command="{Binding DataContext.DeleteButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
 
                     </Grid>

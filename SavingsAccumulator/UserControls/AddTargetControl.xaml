@@ -24,7 +24,7 @@
         </StackPanel>
 
         <StackPanel  Grid.Row="1" Orientation="Vertical">
-            <TextBlock Text="Amount Saved:" />
+            <TextBlock Text="Target to reach:" />
             <TextBox x:Name="SavedAmtTxtBox" />
         </StackPanel>
 
