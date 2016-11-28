@@ -62,7 +62,7 @@ namespace SavingsAccumulator.View_Model
         }
 
         private void ChangeTargetVisibility(object parameter) {
-            ShowTargetControl = true;
+            ShowTargetControl = true;//makes the main page visible on start up
         }
     }
 }
