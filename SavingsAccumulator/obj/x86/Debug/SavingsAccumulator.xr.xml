@@ -10,8 +10,8 @@
     <RootPropertyPathName Name="TargetList" />
     <RootPropertyPathName Name="DataContext" />
     <RootPropertyPathName Name="TransactionButtonCommand" />
-    <RootPropertyPathName Name="CurrentBalance" />
     <RootPropertyPathName Name="SavingTarget" />
+    <RootPropertyPathName Name="CurrentBalance" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Name" />
   </Roots.PropertyPathNames>
