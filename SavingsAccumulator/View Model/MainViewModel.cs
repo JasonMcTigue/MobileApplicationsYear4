@@ -39,15 +39,18 @@ namespace SavingsAccumulator.View_Model
                 NotifyPropertyChanged("TargetId");
             }
         }
-        
+
+        public bool ShowTargetControl { get; private set; }
+
         public MainViewModel() {
            TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
            TargetButtonCommand = new ButtonCommands(ChangeTargetVisibility);
         }
 
-        public void addNewTarget(Target newTarget) {
+        public async void addNewTarget(Target newTarget)
+        {
             //adds a new item to the list
-            DataContextHelper.AddRecord(newTarget);
+            await DataContextHelper.AddRecord(newTarget);
         }
 
         private void ChangeTransactionVisibility(object parameter) {
@@ -59,7 +62,7 @@ namespace SavingsAccumulator.View_Model
         }
 
         private void ChangeTargetVisibility(object parameter) {
-            //ShowTargetControl = true;
+            ShowTargetControl = true;
         }
     }
 }
