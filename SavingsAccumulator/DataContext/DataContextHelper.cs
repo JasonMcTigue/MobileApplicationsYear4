@@ -116,6 +116,16 @@ namespace SavingsAccumulator.DataContext
             });
         }
 
+
+        public static async Task DeleteTarget<T>(T itemToDelete) where T : class {
+
+            using (var db = new TargetDataContext())
+            {
+                db.Set<T>().Remove(itemToDelete);
+                await db.SaveChangesAsync();
+            }
+        }
+
         public static void deleteAlltargets() {
             using (var db = new TargetDataContext()) {
                 foreach (var item in db.Targets)

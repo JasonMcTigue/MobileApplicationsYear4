@@ -262,4 +262,3 @@ C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsA
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\UserControls\AddTransactionControl.xbf
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTransactionControl.g.i.cs
 C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\UserControls\AddTransactionControl.g.cs
-C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\obj\x86\Debug\SavingsAccumulator.csprojResolveAssemblyReference.cache

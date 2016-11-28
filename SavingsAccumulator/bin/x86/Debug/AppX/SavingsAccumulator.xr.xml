@@ -10,9 +10,10 @@
     <RootPropertyPathName Name="TargetButtonCommand" />
     <RootPropertyPathName Name="TargetList" />
     <RootPropertyPathName Name="DataContext" />
+    <RootPropertyPathName Name="DeleteButtonCommand" />
     <RootPropertyPathName Name="TransactionButtonCommand" />
-    <RootPropertyPathName Name="CurrentBalance" />
     <RootPropertyPathName Name="SavingTarget" />
+    <RootPropertyPathName Name="CurrentBalance" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Name" />
   </Roots.PropertyPathNames>
@@ -86,13 +87,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Value" />
-      <RootProperty Name="Maximum" />
-      <RootProperty Name="IsIndeterminate" />
-      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />

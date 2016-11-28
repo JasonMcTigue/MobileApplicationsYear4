@@ -1,6 +1,5 @@
 ﻿using SavingsAccumulator.ButtonCommand;
 using SavingsAccumulator.DataContext;
-using SavingsAccumulator.Enums;
 using SavingsAccumulator.Model;
 using System;
 using System.Collections.Generic;
@@ -17,17 +16,9 @@ namespace SavingsAccumulator.View_Model
 
         private int _targetId;
 
-        public ButtonCommands TransactionButtonCommand { get; set; }
-        public ButtonCommands TargetButtonCommand { get; set; }
+       
 
-        private TargetAction _targetAction = TargetAction.Create;
-        public TargetAction TargetAction {
-            get { return _targetAction; }
-            set {
-                _targetAction = value;
-                NotifyPropertyChanged("TargetAction");
-            }
-        }
+        
         public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
         }
@@ -52,9 +43,24 @@ namespace SavingsAccumulator.View_Model
 
         public bool ShowTargetControl { get; private set; }
 
+
+        public ButtonCommands TransactionButtonCommand { get; set; }
+        public ButtonCommands TargetButtonCommand { get; set; }
+       // public ButtonCommands EditButtonCommand { get; set; }//this binds the buttons 
+       public ButtonCommands DeleteButtonCommand { get; set; }
+
+        public event EventHandler OnDeleteFinished;
+
+        private void FireOnDeleteFinished() {
+            if (OnDeleteFinished != null)
+                OnDeleteFinished(null,null);
+        }
+
         public MainViewModel() {
            TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
            TargetButtonCommand = new ButtonCommands(ChangeTargetVisibility);
+            //EditButtonCommand = new ButtonCommands(EditTarget);
+            DeleteButtonCommand = new ButtonCommands(DeleteTarget);
         }
 
         public async void addNewTarget(Target newTarget)
@@ -72,16 +78,25 @@ namespace SavingsAccumulator.View_Model
         }
 
         private void ChangeTargetVisibility(object parameter) {
+
+           
             ShowTargetControl = true;//makes the main page visible on start up
         }
 
-        private void EditTarget(object parameter) {
+        /*  private void EditTarget(object parameter) {
+              var target = parameter as Target;
+              TargetId = target.TargetId;
+
+              this.TargetAction = TargetAction.Update;
+
+              ShowTargetControl = true;
+          }
+          */
+
+        private async void DeleteTarget(object parameter) {
             var target = parameter as Target;
-            TargetId = target.TargetId;
-
-            this.TargetAction = TargetAction.Update;
-
-            ShowTargetControl = true;
+            await DataContextHelper.DeleteTarget<Target>(target);
+            FireOnDeleteFinished();
         }
     }
 }

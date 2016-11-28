@@ -37,6 +37,8 @@ namespace SavingsAccumulator
             //TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSavedFinished;
             TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSaveFinished;
 
+            
+
            // DataContextHelper.deleteAlltargets();
 
             //instanceded when page loads
@@ -44,10 +46,17 @@ namespace SavingsAccumulator
             if (_mainViewModel == null) {
                 _mainViewModel = new MainViewModel();
 
+                _mainViewModel.OnDeleteFinished += _mainViewModel_OnDeleteFinished;
                 //used main view model to get data from
                 DataContext = _mainViewModel;
+
             }
 
+        }
+
+        private void _mainViewModel_OnDeleteFinished(object sender, EventArgs e)
+        {
+            TargetListView.ItemsSource = _mainViewModel.TargetList;//refreshs the list from the database after delete as finshed
         }
 
         private void TransactionControl_TransactionSaveFinished(object sender, EventArgs e)

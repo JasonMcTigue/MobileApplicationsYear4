@@ -19,7 +19,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="TargetListView" Grid.Row="0" ItemsSource="{Binding TargetList}"><!--binds to target list-->
+        <ListView x:ConnectionId='1' x:Name="TargetListView" Grid.Row="0" ItemsSource="{Binding TargetList}"><!--binds to target list-->
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -74,11 +74,12 @@
         </ListView>
 
         <CommandBar Grid.Row="1" ClosedDisplayMode="Minimal">
-            <AppBarButton x:Name="AppBarAddBtn" Icon="Add" Label="Add Target" Click="AppBarButton_Click" Command="{Binding TargetButtonCommand}"/>
+            <AppBarButton x:ConnectionId='4' x:Name="AppBarAddBtn" Icon="Add" Label="Add Target"                            Command="{Binding TargetButtonCommand}"/>
         </CommandBar>
 
         <!--Binds the trasaction page to the main page using converter-->
-        <CC:AddTransactionControl x:Name="TransactionControl" Grid.RowSpan="2" TargetId="{Binding TargetId}"  Visibility="{Binding ShowTransactionControl, Converter={StaticResource BoolVisibility}, Mode=TwoWay}"/>
-        <CC:AddTargetControl x:Name="TargetControl" Grid.RowSpan="2" Visibility="{Binding ShowTargetControl, Converter={StaticResource BoolVisibility}}"/>
+        <CC:AddTransactionControl x:ConnectionId='2' x:Name="TransactionControl" Grid.RowSpan="2" TargetId="{Binding TargetId}"  Visibility="{Binding ShowTransactionControl, Converter={StaticResource BoolVisibility}, Mode=TwoWay}"/>
+        <CC:AddTargetControl x:ConnectionId='3' x:Name="TargetControl" Grid.RowSpan="2" Visibility="{Binding ShowTargetControl, Converter={StaticResource BoolVisibility}}"/>
     </Grid>
 </Page>
+

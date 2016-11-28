@@ -132,25 +132,31 @@ namespace SavingsAccumulator.SavingsAccumulator_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[8];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "SavingsAccumulator.Converters.BoolVisibilityConverter";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "SavingsAccumulator.UserControls.AddTransactionControl";
             _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[4] = "Int32";
             _typeNameTable[5] = "SavingsAccumulator.UserControls.AddTargetControl";
-            _typeNameTable[6] = "SavingsAccumulator.MainPage";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[6] = "SavingsAccumulator.Enums.TargetAction";
+            _typeNameTable[7] = "System.Enum";
+            _typeNameTable[8] = "System.ValueType";
+            _typeNameTable[9] = "SavingsAccumulator.MainPage";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Page";
 
-            _typeTable = new global::System.Type[8];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::SavingsAccumulator.Converters.BoolVisibilityConverter);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::SavingsAccumulator.UserControls.AddTransactionControl);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[4] = typeof(global::System.Int32);
             _typeTable[5] = typeof(global::SavingsAccumulator.UserControls.AddTargetControl);
-            _typeTable[6] = typeof(global::SavingsAccumulator.MainPage);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[6] = typeof(global::SavingsAccumulator.Enums.TargetAction);
+            _typeTable[7] = typeof(global::System.Enum);
+            _typeTable[8] = typeof(global::System.ValueType);
+            _typeTable[9] = typeof(global::SavingsAccumulator.MainPage);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Page);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -188,7 +194,7 @@ namespace SavingsAccumulator.SavingsAccumulator_XamlTypeInfo
         private object Activate_0_BoolVisibilityConverter() { return new global::SavingsAccumulator.Converters.BoolVisibilityConverter(); }
         private object Activate_2_AddTransactionControl() { return new global::SavingsAccumulator.UserControls.AddTransactionControl(); }
         private object Activate_5_AddTargetControl() { return new global::SavingsAccumulator.UserControls.AddTargetControl(); }
-        private object Activate_6_MainPage() { return new global::SavingsAccumulator.MainPage(); }
+        private object Activate_9_MainPage() { return new global::SavingsAccumulator.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -231,18 +237,37 @@ namespace SavingsAccumulator.SavingsAccumulator_XamlTypeInfo
                 userType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_5_AddTargetControl;
                 userType.AddMemberName("TargetId");
+                userType.AddMemberName("Action");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  SavingsAccumulator.MainPage
+            case 6:   //  SavingsAccumulator.Enums.TargetAction
+                userType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Create", global::SavingsAccumulator.Enums.TargetAction.Create);
+                userType.AddEnumValue("Update", global::SavingsAccumulator.Enums.TargetAction.Update);
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  System.Enum
+                userType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 8:   //  System.ValueType
+                userType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 9:   //  SavingsAccumulator.MainPage
                 userType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_9_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.Page
+            case 10:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -270,6 +295,16 @@ namespace SavingsAccumulator.SavingsAccumulator_XamlTypeInfo
             var that = (global::SavingsAccumulator.UserControls.AddTargetControl)instance;
             that.TargetId = (global::System.Int32)Value;
         }
+        private object get_2_AddTargetControl_Action(object instance)
+        {
+            var that = (global::SavingsAccumulator.UserControls.AddTargetControl)instance;
+            return that.Action;
+        }
+        private void set_2_AddTargetControl_Action(object instance, object Value)
+        {
+            var that = (global::SavingsAccumulator.UserControls.AddTargetControl)instance;
+            that.Action = (global::SavingsAccumulator.Enums.TargetAction)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -289,6 +324,12 @@ namespace SavingsAccumulator.SavingsAccumulator_XamlTypeInfo
                 xamlMember = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlMember(this, "TargetId", "Int32");
                 xamlMember.Getter = get_1_AddTargetControl_TargetId;
                 xamlMember.Setter = set_1_AddTargetControl_TargetId;
+                break;
+            case "SavingsAccumulator.UserControls.AddTargetControl.Action":
+                userType = (global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SavingsAccumulator.UserControls.AddTargetControl");
+                xamlMember = new global::SavingsAccumulator.SavingsAccumulator_XamlTypeInfo.XamlMember(this, "Action", "SavingsAccumulator.Enums.TargetAction");
+                xamlMember.Getter = get_2_AddTargetControl_Action;
+                xamlMember.Setter = set_2_AddTargetControl_Action;
                 break;
             }
             return xamlMember;
