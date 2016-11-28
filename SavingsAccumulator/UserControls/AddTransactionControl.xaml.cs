@@ -36,12 +36,13 @@ namespace SavingsAccumulator.UserControls
 
         private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
 
+        //public event EventHandler TransactionSaveFinished;
         public event EventHandler TransactionSaveFinished;
-        private void FireTransactionSaveFinished() {
-            if (TransactionSaveFinished != null)
-                TransactionSaveFinished(null,null);
-        }
-
+         private void FireTransactionSaveFinished() {
+             if (TransactionSaveFinished != null)
+                 TransactionSaveFinished(null,null);
+         }
+         
 
         public AddTransactionControl()
         {

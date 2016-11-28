@@ -1,5 +1,6 @@
 ﻿using SavingsAccumulator.ButtonCommand;
 using SavingsAccumulator.DataContext;
+using SavingsAccumulator.Enums;
 using SavingsAccumulator.Model;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,15 @@ namespace SavingsAccumulator.View_Model
 
         public ButtonCommands TransactionButtonCommand { get; set; }
         public ButtonCommands TargetButtonCommand { get; set; }
+
+        private TargetAction _targetAction = TargetAction.Create;
+        public TargetAction TargetAction {
+            get { return _targetAction; }
+            set {
+                _targetAction = value;
+                NotifyPropertyChanged("TargetAction");
+            }
+        }
         public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
         }
@@ -63,6 +73,15 @@ namespace SavingsAccumulator.View_Model
 
         private void ChangeTargetVisibility(object parameter) {
             ShowTargetControl = true;//makes the main page visible on start up
+        }
+
+        private void EditTarget(object parameter) {
+            var target = parameter as Target;
+            TargetId = target.TargetId;
+
+            this.TargetAction = TargetAction.Update;
+
+            ShowTargetControl = true;
         }
     }
 }

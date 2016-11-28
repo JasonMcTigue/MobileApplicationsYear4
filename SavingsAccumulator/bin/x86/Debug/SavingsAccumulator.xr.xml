@@ -7,11 +7,12 @@
     <RootPropertyPathName Name="ShowTargetControl" />
     <RootPropertyPathName Name="TargetId" />
     <RootPropertyPathName Name="ShowTransactionControl" />
+    <RootPropertyPathName Name="TargetButtonCommand" />
     <RootPropertyPathName Name="TargetList" />
     <RootPropertyPathName Name="DataContext" />
     <RootPropertyPathName Name="TransactionButtonCommand" />
-    <RootPropertyPathName Name="SavingTarget" />
     <RootPropertyPathName Name="CurrentBalance" />
+    <RootPropertyPathName Name="SavingTarget" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Name" />
   </Roots.PropertyPathNames>
@@ -67,6 +68,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />

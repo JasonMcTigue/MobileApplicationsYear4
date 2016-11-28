@@ -41,6 +41,9 @@ namespace SavingsAccumulator.UserControls
 
             //Runs the fire on target saved event
             FireOnTargetSave(newTarget);
+            //FireOnTargetSaveFinihed(newTarget);
+
+
 
             resetTxtBox();
             Visibility = Visibility.Collapsed;
