@@ -1,4 +1,5 @@
-﻿using SavingsAccumulator.Model;
+﻿using SavingsAccumulator.Enums;
+using SavingsAccumulator.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,6 +22,33 @@ namespace SavingsAccumulator.UserControls
     public sealed partial class AddTargetControl : UserControl
     {
 
+        private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
+        public int TargetId
+        {
+            get
+            {
+                return (int)GetValue(TargetIdProperty);
+            }
+            set
+            {
+                SetValue(TargetIdProperty, value);//Gets target id from data binding
+            }
+
+        }
+
+        private readonly DependencyProperty ActionProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
+        public TargetAction Action
+        {
+            get
+            {
+                return (TargetAction)GetValue(ActionProperty);
+            }
+            set
+            {
+                SetValue(ActionProperty, value);//Gets target id from data binding
+            }
+
+        }
 
         public event EventHandler <Target> OnTargetSaved;
         public AddTargetControl()

@@ -23,7 +23,7 @@ namespace SavingsAccumulator.UserControls
     {
         public int _targetId;
 
-
+        private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
         public int TargetId {
             get {
                 return (int)GetValue(TargetIdProperty);
@@ -33,8 +33,6 @@ namespace SavingsAccumulator.UserControls
             }
 
         }
-
-        private readonly DependencyProperty TargetIdProperty = DependencyProperty.Register("TargetId", typeof(int), typeof(AddTransactionControl), null);
 
         //public event EventHandler TransactionSaveFinished;
         public event EventHandler TransactionSaveFinished;
