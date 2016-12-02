@@ -15,9 +15,6 @@ namespace SavingsAccumulator.View_Model
     {
 
         private int _targetId;
-
-       
-
         
         public List<Target> TargetList {
             get { return DataContextHelper.GetTable<Target>(); }
