@@ -38,12 +38,15 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
                         </Grid.RowDefinitions>
                         
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
+                       
                             
                         </Grid.ColumnDefinitions>
 
@@ -52,18 +55,23 @@
                         <TextBlock Grid.Column="1" Text="{Binding Name}"/>
 
                         <!--Last time it was updated-->
-                        <TextBlock Margin="0,10,0,0" Grid.Row="1" Text="Target: "/>
+                       
                         <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Date}"/>
-                        <TextBlock Margin="0,10,10,0" Grid.Row="1" Grid.Column="2" Text="{Binding CurrentBalance}"/>
-                        <TextBlock Margin="0,10,10,10" Grid.Row="2" Grid.Column="3" Text="{Binding SavingTarget}"/>
 
+                        <TextBlock Margin="0,10,0,0" Grid.Row="2" Text="Current Balance: "/>
+                        <TextBlock Margin="0,10,10,0" Grid.Row="2" Grid.Column="1" Text="{Binding CurrentBalance}"/>
 
+                        <TextBlock Margin="0,10,0,0" Grid.Row="3" Text="Target: "/>
+                        <TextBlock Margin="0,10,10,0" Grid.Row="3" Grid.Column="1" Text="{Binding SavingTarget}"/>
+
+                        <TextBlock Margin="0,10,0,0" Grid.Row="4" Text="Notes: "/>
+                        <TextBlock Margin="0,10,10,0" Grid.Row="4" Grid.Column="1" Text="{Binding Notes}"/>
                         <!--progress bar spans through out all 3 columns-->
                         <!--<ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="20" Maximum="100" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10" /-->
                                                                                                                                                                    <!--Sends taget to button command-->
-                        <Button Grid.Row="3" Grid.Column="0" Content="Add " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
-                       <!-- <Button Grid.Row="3" Grid.Column="1" Content="Minus " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>-->
-                        <Button Grid.Row="3" Grid.Column="2" Content="Delete" Command="{Binding DataContext.DeleteButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
+                        <Button Grid.Row="5" Grid.Column="0" Content="Add " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
+                       
+                        <Button Grid.Row="5" Grid.Column="2" Content="Delete" Command="{Binding DataContext.DeleteButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
 
                     </Grid>
                 </DataTemplate>

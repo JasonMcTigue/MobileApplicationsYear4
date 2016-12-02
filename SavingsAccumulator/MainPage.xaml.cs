@@ -81,5 +81,7 @@ namespace SavingsAccumulator
             //open the add target control
             TargetControl.Visibility = Visibility.Visible;
         }
+
+       
     }
 }
