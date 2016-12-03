@@ -34,9 +34,8 @@ namespace SavingsAccumulator
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             TargetControl.OnTargetSaved += TargetControl_OnTargetSaved;
-            //TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSavedFinished;
             TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSaveFinished;
-
+          
             
 
            // DataContextHelper.deleteAlltargets();
@@ -54,6 +53,7 @@ namespace SavingsAccumulator
 
         }
 
+      
         private void _mainViewModel_OnDeleteFinished(object sender, EventArgs e)
         {
             TargetListView.ItemsSource = _mainViewModel.TargetList;//refreshs the list from the database after delete as finshed
@@ -81,6 +81,8 @@ namespace SavingsAccumulator
             //open the add target control
             TargetControl.Visibility = Visibility.Visible;
         }
+
+
 
        
     }

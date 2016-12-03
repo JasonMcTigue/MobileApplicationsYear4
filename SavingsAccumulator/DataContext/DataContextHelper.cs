@@ -126,13 +126,15 @@ namespace SavingsAccumulator.DataContext
             }
         }
 
+        /*
+        //class that was used for testing 
         public static void deleteAlltargets() {
             using (var db = new TargetDataContext()) {
                 foreach (var item in db.Targets)
                     db.Remove(item);
                 db.SaveChanges();
             }
-        }
+        }*/
 
        
     }

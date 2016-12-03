@@ -7,6 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:CC="using:SavingsAccumulator.UserControls"
     xmlns:Converter="using:SavingsAccumulator.Converters"
+
+    
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -19,7 +21,9 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="TargetListView" Grid.Row="0" ItemsSource="{Binding TargetList}"><!--binds to target list-->
+       
+
+            <ListView x:Name="TargetListView" Grid.Row="0" ItemsSource="{Binding TargetList}"><!--binds to target list-->
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -32,6 +36,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
 
+                    
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition/>
@@ -49,6 +54,8 @@
                        
                             
                         </Grid.ColumnDefinitions>
+                        
+                        
 
                         <!--Target text block-->
                         <TextBlock Text="Target Name: "/>
@@ -61,16 +68,16 @@
                         <TextBlock Margin="0,10,0,0" Grid.Row="2" Text="Current Balance: "/>
                         <TextBlock Margin="0,10,10,0" Grid.Row="2" Grid.Column="1" Text="{Binding CurrentBalance}"/>
 
-                        <TextBlock Margin="0,10,0,0" Grid.Row="3" Text="Target: "/>
+                        <TextBlock Margin="0,10,0,0" Grid.Row="3" Text="Target to reach: "/>
                         <TextBlock Margin="0,10,10,0" Grid.Row="3" Grid.Column="1" Text="{Binding SavingTarget}"/>
 
                         <TextBlock Margin="0,10,0,0" Grid.Row="4" Text="Notes: "/>
                         <TextBlock Margin="0,10,10,0" Grid.Row="4" Grid.Column="1" Text="{Binding Notes}"/>
                         <!--progress bar spans through out all 3 columns-->
-                        <!--<ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="20" Maximum="100" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10" /-->
-                                                                                                                                                                   <!--Sends taget to button command-->
+                        <!--<ProgressBar Margin="0,10,0,10" Grid.Row="2" Value="{Binding CurrentBalance}" Maximum="{Binding SavingTarget}" Grid.ColumnSpan="3" IsIndeterminate="False" Height="10"/>-->
+                        <!--Sends taget to button command-->
                         <Button Grid.Row="5" Grid.Column="0" Content="Add " Command="{Binding DataContext.TransactionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
-                       
+                        <!--<Button Grid.Row="5" Grid.Column="1" Content="Minus" Command="{Binding DataContext.SubtractionButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>-->
                         <Button Grid.Row="5" Grid.Column="2" Content="Delete" Command="{Binding DataContext.DeleteButtonCommand, ElementName=TargetListView}" CommandParameter="{Binding}"/>
 
                     </Grid>
@@ -87,6 +94,7 @@
 
         <!--Binds the trasaction page to the main page using converter-->
         <CC:AddTransactionControl x:Name="TransactionControl" Grid.RowSpan="2" TargetId="{Binding TargetId}"  Visibility="{Binding ShowTransactionControl, Converter={StaticResource BoolVisibility}, Mode=TwoWay}"/>
+
         <CC:AddTargetControl x:Name="TargetControl" Grid.RowSpan="2" Visibility="{Binding ShowTargetControl, Converter={StaticResource BoolVisibility}}"/>
     </Grid>
 </Page>

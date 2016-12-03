@@ -18,11 +18,13 @@
 
         </Grid.RowDefinitions>
 
+   
+
         <StackPanel Orientation="Vertical">
             <TextBlock Text="Target Name:" />
             <TextBox x:Name="TargetNameTxtBox" />
         </StackPanel>
-
+       
         <StackPanel  Grid.Row="1" Orientation="Vertical">
             <TextBlock Text="Target to reach:" />
             <TextBox x:Name="SavedAmtTxtBox" />
@@ -32,6 +34,8 @@
             <TextBlock Text="Notes:" />
             <TextBox x:Name="NotesTxtBox" />
         </StackPanel>
+        
+        
 
         <Button Grid.Row="3" x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Click="SaveBtn_Click"/>
         <Button Grid.Row="3" x:Name="CancelBtn" Content="Cancel" HorizontalAlignment="Right" Click="CancelBtn_Click"/>

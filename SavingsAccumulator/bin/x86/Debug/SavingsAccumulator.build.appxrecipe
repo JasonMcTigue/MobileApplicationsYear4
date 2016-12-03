@@ -127,6 +127,15 @@
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Remotion.Linq\2.1.1\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
     </AppxPackagedFile>
@@ -448,6 +457,27 @@
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Win2D.uwp\1.19.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.Common\2.2.16306.1\lib\portable46-net451+win81\WinUX.Common.dll">
+      <PackagePath>WinUX.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP\2.2.16306.1\lib\.NETCore50\WinUX.UWP.dll">
+      <PackagePath>WinUX.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml\2.2.16306.1\lib\.NETCore50\WinUX.UWP.Xaml.dll">
+      <PackagePath>WinUX.UWP.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml.Controls\2.2.16306.1\lib\.NETCore50\WinUX.UWP.Xaml.Controls.dll">
+      <PackagePath>WinUX.UWP.Xaml.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WriteableBitmapEx\1.5.0\lib\NetCore45\WriteableBitmapEx.WinRT.dll">
+      <PackagePath>WriteableBitmapEx.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Win2D.uwp\1.19.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -483,6 +513,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml\2.2.16306.1\lib\netcore50\WinUX.UWP.Xaml\WinUX.UWP.Xaml.xr.xml">
+      <PackagePath>WinUX.UWP.Xaml\WinUX.UWP.Xaml.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml.Controls\2.2.16306.1\lib\netcore50\WinUX.UWP.Xaml.Controls\WinUX.UWP.Xaml.Controls.xr.xml">
+      <PackagePath>WinUX.UWP.Xaml.Controls\WinUX.UWP.Xaml.Controls.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

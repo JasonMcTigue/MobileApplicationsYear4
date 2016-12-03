@@ -59,6 +59,7 @@ namespace SavingsAccumulator.UserControls
             var newTransaction = new Transaction();
             newTransaction.Date = DateTime.Now;
             newTransaction.Amount = Convert.ToDecimal(AmtTxtBox.Text);
+            
             newTransaction.TargetId = TargetId;//assosicates target with target id for that transaction 
             await DataContextHelper.AddRecord<Transaction>(newTransaction);
 
@@ -73,6 +74,7 @@ namespace SavingsAccumulator.UserControls
 
         private void ClearTxtBox() {
             AmtTxtBox.Text = string.Empty;//clears all text from the text box
+           
         }
 
         private void CollapseControl() {

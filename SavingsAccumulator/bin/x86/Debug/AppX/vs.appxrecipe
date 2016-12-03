@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>68447C251362E3642569F6E48BA859141BAD8850388B895BDF347AD74DBC8557</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>20AF7CB40C34A9A536F5A9BD5435E49305AC752298CBE74C9CC91CB22CFEB5E2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>67c145e8-0c52-4237-bb13-c2de0d098c3b_1.0.0.0_x86__t9sbtj4kj4cst</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>67c145e8-0c52-4237-bb13-c2de0d098c3b_t9sbtj4kj4cst!App</RegisteredUserModeAppID>
     <RegisteredPackageID>67c145e8-0c52-4237-bb13-c2de0d098c3b</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T16:24:16.241</Modified>
+      <Modified>2016-12-03T19:40:22.639</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.exe">
       <PackagePath>entrypoint\SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-12-02T16:24:13.960</Modified>
+      <Modified>2016-12-03T19:40:21.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -171,6 +171,18 @@
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.VisualBasic\10.0.1\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
       <Modified>2016-06-11T22:13:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-10-19T16:07:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-10-19T16:07:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-13T22:06:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Remotion.Linq\2.1.1\lib\portable-net45+win+wpa81+wp80\Remotion.Linq.dll">
       <PackagePath>Remotion.Linq.dll</PackagePath>
@@ -600,6 +612,34 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T22:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Win2D.uwp\1.19.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2016-08-09T07:14:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.Common\2.2.16306.1\lib\portable46-net451+win81\WinUX.Common.dll">
+      <PackagePath>WinUX.Common.dll</PackagePath>
+      <Modified>2016-11-01T09:28:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP\2.2.16306.1\lib\.NETCore50\WinUX.UWP.dll">
+      <PackagePath>WinUX.UWP.dll</PackagePath>
+      <Modified>2016-11-01T09:28:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml\2.2.16306.1\lib\.NETCore50\WinUX.UWP.Xaml.dll">
+      <PackagePath>WinUX.UWP.Xaml.dll</PackagePath>
+      <Modified>2016-11-01T09:28:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml.Controls\2.2.16306.1\lib\.NETCore50\WinUX.UWP.Xaml.Controls.dll">
+      <PackagePath>WinUX.UWP.Xaml.Controls.dll</PackagePath>
+      <Modified>2016-11-01T09:28:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WriteableBitmapEx\1.5.0\lib\NetCore45\WriteableBitmapEx.WinRT.dll">
+      <PackagePath>WriteableBitmapEx.WinRT.dll</PackagePath>
+      <Modified>2015-03-31T15:28:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Win2D.uwp\1.19.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2016-08-09T07:14:36.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-11-14T14:40:49.254</Modified>
@@ -640,20 +680,28 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.xr.xml">
       <PackagePath>SavingsAccumulator.xr.xml</PackagePath>
-      <Modified>2016-12-02T16:12:45.096</Modified>
+      <Modified>2016-12-03T19:30:51.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-10-24T11:52:32.070</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml\2.2.16306.1\lib\netcore50\WinUX.UWP.Xaml\WinUX.UWP.Xaml.xr.xml">
+      <PackagePath>WinUX.UWP.Xaml\WinUX.UWP.Xaml.xr.xml</PackagePath>
+      <Modified>2016-11-01T09:28:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\WinUX.UWP.Xaml.Controls\2.2.16306.1\lib\netcore50\WinUX.UWP.Xaml.Controls\WinUX.UWP.Xaml.Controls.xr.xml">
+      <PackagePath>WinUX.UWP.Xaml.Controls\WinUX.UWP.Xaml.Controls.xr.xml</PackagePath>
+      <Modified>2016-11-01T09:28:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T16:24:15.685</Modified>
+      <Modified>2016-12-03T19:40:21.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\SavingsAccumulator.exe">
       <PackagePath>SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-12-02T16:24:16.237</Modified>
+      <Modified>2016-12-03T19:40:22.634</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
