@@ -14,7 +14,7 @@ namespace SavingsAccumulator.DataContext
                                                //DbContext object gets access to the tables and views.
 
     {
-        //DbSet's get access tocreate, update, delete and modify the data in the table.
+        //DbSet's get access toc reate, update, delete and modify the data in the table.
         //All entitie a DbSet inside a DbContext will be picked up by EF and added to the schema.
         public DbSet<Target> Targets { get; set; } 
         public DbSet<Transaction> Transactions { get; set; }

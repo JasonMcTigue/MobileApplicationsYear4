@@ -13,27 +13,7 @@ namespace SavingsAccumulator.DataContext
     public static class DataContextHelper
     {
 
-        /*
-        public static async void AddTarget(Target newTarget)
-        {
-
-            using (var db = new TargetDataContext())
-            {
-                db.Targets.Add(newTarget); //adds a new target to the database
-                await db.SaveChangesAsync();
-            }
-        }
-
-        public static async void AddTransation(Target newTransaction)
-        {
-
-            using (var db = new TargetDataContext())
-            {
-                db.Targets.Add(newTransaction); //adds a new target to the database
-                await db.SaveChangesAsync();
-            }
-        }
-        */
+     
 
         //generic method so both classes can share one method
         public static async Task AddRecord<T>(T newRecord) where T : class
@@ -53,15 +33,7 @@ namespace SavingsAccumulator.DataContext
         }
 
 
-        /*
-                internal static List<Target> GetTargets()
-                {
-                    using (var db = new TargetDataContext())
-                    {
-                        return db.Targets.ToList();
-                    }
-                }
-                */
+        
 
         //can get tragets and transactions from one method
         public static List<T> GetTable<T>() where T : class
@@ -92,13 +64,7 @@ namespace SavingsAccumulator.DataContext
 
             }
 
-            /* public static List<Target> GetTargets()
-             {
-                 using (var db = new TargetDataContext())
-                 {
-                     return db.Targets.ToList();
-                 }
-             }*/
+
         }
 
         private static async Task AddBalance(Transaction savedTransaction) {
@@ -108,7 +74,6 @@ namespace SavingsAccumulator.DataContext
                 using (var db = new TargetDataContext()) {
                     var targets = await db.Targets.ToListAsync();// turns target into a list 
                     var target = targets.SingleOrDefault(x => x.TargetId == savedTransaction.TargetId);//retrives the target based on the target id
-
                     target.CurrentBalance += savedTransaction.Amount;//adds new amount to balance
 
                     await db.SaveChangesAsync();

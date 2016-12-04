@@ -35,8 +35,7 @@ namespace SavingsAccumulator
         {
             TargetControl.OnTargetSaved += TargetControl_OnTargetSaved;
             TransactionControl.TransactionSaveFinished += TransactionControl_TransactionSaveFinished;
-          
-            
+         
 
            // DataContextHelper.deleteAlltargets();
 

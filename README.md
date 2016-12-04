@@ -4,7 +4,7 @@
 
 ## Introduction
 For my mobile applications module in 4th year I had to make a UWP app. I decided to make a savings accumulator app, the aim
-for this app is to allow the user to enter a target and its price and then can add or take away an amount as desired. This app 
+for this app is to allow the user to enter a target and its price and then they can add or take away an amount as desired. This app 
 looks quite simple but it has a lot of complexity behind as I tried to add all the technologies I learned this semester.
 
 
@@ -12,6 +12,7 @@ looks quite simple but it has a lot of complexity behind as I tried to add all t
 
 | **Technologies**       | 
 | -------------          |
+| UWP    |
 | MVVM    |
 | Entity Framwork Core   |
 | SQLite | 
@@ -62,3 +63,6 @@ An Example of how to use the app is demonstrated in the following screenshots:
 <img src="Screenshots/main_page.PNG" alt="home" width="200" height="200"/>
 <img src="Screenshots/add.PNG" alt="home" width="200" height="200"/>
 <img src="Screenshots/updated.PNG" alt="home" width="200" height="200"/>
+
+## Problems
+In general I found this project to be quite 

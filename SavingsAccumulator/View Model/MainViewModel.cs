@@ -43,21 +43,18 @@ namespace SavingsAccumulator.View_Model
 
         public ButtonCommands TransactionButtonCommand { get; set; }
         public ButtonCommands TargetButtonCommand { get; set; }
-       // public ButtonCommands EditButtonCommand { get; set; }//this binds the buttons 
-       public ButtonCommands DeleteButtonCommand { get; set; }
+        // public ButtonCommands EditButtonCommand { get; set; }//this binds the buttons 
+        public ButtonCommands DeleteButtonCommand { get; set; }
 
         public event EventHandler OnDeleteFinished;
 
-        private void FireOnDeleteFinished() {
-            if (OnDeleteFinished != null)
-                OnDeleteFinished(null,null);
-        }
+       
 
         public MainViewModel() {
            TransactionButtonCommand = new ButtonCommands(ChangeTransactionVisibility);//Changes ChangeTransactionVisibility to true
-           TargetButtonCommand = new ButtonCommands(ChangeTargetVisibility);
-            //EditButtonCommand = new ButtonCommands(EditTarget);
-            DeleteButtonCommand = new ButtonCommands(DeleteTarget);
+           TargetButtonCommand = new ButtonCommands(ChangeTargetVisibility);//changes ChangeTargetVisibility to true so this page is displayed
+           //EditButtonCommand = new ButtonCommands(EditTarget);
+           DeleteButtonCommand = new ButtonCommands(DeleteTarget);
         }
 
         public async void addNewTarget(Target newTarget)
@@ -92,8 +89,14 @@ namespace SavingsAccumulator.View_Model
 
         private async void DeleteTarget(object parameter) {
             var target = parameter as Target;
-            await DataContextHelper.DeleteTarget<Target>(target);
+            await DataContextHelper.DeleteTarget<Target>(target);//Removes record
             FireOnDeleteFinished();
+        }
+
+        private void FireOnDeleteFinished()
+        {
+            if (OnDeleteFinished != null)
+                OnDeleteFinished(null, null);
         }
     }
 }
