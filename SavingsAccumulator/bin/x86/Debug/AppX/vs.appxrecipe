@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-04T15:51:52.250</Modified>
+      <Modified>2016-12-04T17:51:05.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\SavingsAccumulator.exe">
       <PackagePath>entrypoint\SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-12-04T15:51:50.893</Modified>
+      <Modified>2016-12-04T17:51:02.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -697,11 +697,11 @@
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-04T15:51:51.481</Modified>
+      <Modified>2016-12-04T17:51:04.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jason\documents\visual studio 2015\Projects\SavingsAccumulator\SavingsAccumulator\bin\x86\Debug\Core\SavingsAccumulator.exe">
       <PackagePath>SavingsAccumulator.exe</PackagePath>
-      <Modified>2016-12-04T15:51:52.230</Modified>
+      <Modified>2016-12-04T17:51:05.736</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
