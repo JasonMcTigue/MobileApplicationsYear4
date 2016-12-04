@@ -68,7 +68,6 @@ An Example of how to use the app is demonstrated in the following screenshots:
 In general I found this project to be quite challenging as there were a few more features that I would have like to add in.
 I tried to add in error handling on the text boxes by using [WinUx](http://jamescroft.co.uk/blog/winux/adding-textbox-validation-to-your-uwp-application-with-winux/) but I was unable to fully implement it in to my project.
 
-Another feature that I would have like to add was a progress bar which would increase and decrease depending on the values inputted. I couldn’t
-figure out why this wouldn't work as I had set the minimum value as the current balance and the maximum as the target to reach.
+Another feature that I would have liked to have added was a progress bar which would increase and decrease depending on the values inputted. I couldn’t figure out why this wouldn't work as I had set the minimum value as the current balance and the maximum as the target to reach.
 
-Finally I would have like to add in an update feature but due to time constraints  I was unable to add it in.
+Finally I would have like to added in an update feature but due to time constraints I was unable to add it in.
