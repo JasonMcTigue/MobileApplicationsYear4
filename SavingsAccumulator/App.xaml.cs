@@ -34,7 +34,7 @@ namespace SavingsAccumulator
             this.Suspending += OnSuspending;
 
             using (var db = new TargetDataContext()) {
-                db.Database.Migrate();//when ever any changes are made it will update in the Sqlite database.
+                db.Database.Migrate();//Allows any device to have its own database from the model.
             }
         }
 
