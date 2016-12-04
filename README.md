@@ -77,10 +77,10 @@ Another feature that I would have liked to have added was a progress bar which w
 Finally I would have like to added in an update feature but due to time constraints I was unable to add it in.
 
 ##References
-*[SQLite and Entity Framework on UWP](https://xamlbrewer.wordpress.com/2016/06/01/getting-started-with-sqlite-and-entity-framework-on-uwp/)
-*[Binding](https://msdn.microsoft.com/en-us/windows/uwp/xaml-platform/x-bind-markup-extension)
-*[MVVM](https://blogs.msdn.microsoft.com/johnshews_blog/2015/09/09/a-minimal-mvvm-uwp-app/)
-*[Await and Async](https://channel9.msdn.com/Series/Windows-Phone-8-1-Development-for-Absolute-Beginners/Part-19-Understanding-async-and-Awaitable-Tasks)
-*[INotifyPropertyChanged](https://learnwithbddevs.wordpress.com/2014/10/09/data-binding-with-inotifypropertychanged-interface/)
-*[Data Binding](http://stackoverflow.com/questions/38247631/data-binding-in-uwp-user-controls-using-template-10)
-*[WinUx](http://jamescroft.co.uk/blog/winux/adding-textbox-validation-to-your-uwp-application-with-winux/)
+* [SQLite and Entity Framework on UWP](https://xamlbrewer.wordpress.com/2016/06/01/getting-started-with-sqlite-and-entity-framework-on-uwp/)
+* [Binding](https://msdn.microsoft.com/en-us/windows/uwp/xaml-platform/x-bind-markup-extension)
+* [MVVM](https://blogs.msdn.microsoft.com/johnshews_blog/2015/09/09/a-minimal-mvvm-uwp-app/)
+* [Await and Async](https://channel9.msdn.com/Series/Windows-Phone-8-1-Development-for-Absolute-Beginners/Part-19-Understanding-async-and-Awaitable-Tasks)
+* [INotifyPropertyChanged](https://learnwithbddevs.wordpress.com/2014/10/09/data-binding-with-inotifypropertychanged-interface/)
+* [Data Binding](http://stackoverflow.com/questions/38247631/data-binding-in-uwp-user-controls-using-template-10)
+* [WinUx](http://jamescroft.co.uk/blog/winux/adding-textbox-validation-to-your-uwp-application-with-winux/)
