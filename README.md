@@ -55,4 +55,6 @@ This saving target is then added to the database and is displayed on the homescr
 
 An Example of how to use the app is demonstrated in the following screenshots:
 
-![alt text](C:\Users\jason\Desktop\App\Homepage "Homepage")
+
+
+<img src="Screenshots/Homepage.png" alt="home" width="200" height="200"/>
