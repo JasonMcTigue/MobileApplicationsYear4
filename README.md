@@ -57,4 +57,8 @@ An Example of how to use the app is demonstrated in the following screenshots:
 
 
 
-<img src="Screenshots/Homepage.png" alt="home" width="200" height="200"/>
+<img src="Screenshots/Homepage.PNG" alt="home" width="200" height="200"/>
+<img src="Screenshots/add_page.PNG" alt="home" width="200" height="200"/>
+<img src="Screenshots/main_page.PNG" alt="home" width="200" height="200"/>
+<img src="Screenshots/add.PNG" alt="home" width="200" height="200"/>
+<img src="Screenshots/updated.PNG" alt="home" width="200" height="200"/>
