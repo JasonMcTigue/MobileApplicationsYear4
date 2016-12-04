@@ -9,7 +9,7 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid Background="LightGray">
+    <Grid Background="#92AFD7">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -26,7 +26,7 @@
         </StackPanel>
        
         <StackPanel  Grid.Row="1" Orientation="Vertical">
-            <TextBlock Text="Target to reach:" />
+            <TextBlock Text="Target Amount:" />
             <TextBox x:ConnectionId='5' x:Name="SavedAmtTxtBox" />
         </StackPanel>
 
